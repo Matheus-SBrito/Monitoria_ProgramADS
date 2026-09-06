@@ -12,9 +12,6 @@ O objetivo é servir como um espaço de apoio aos estudantes, facilitando o apre
 - Operadores e expressões
 - Estruturas condicionais
 - Estruturas de repetição
-- Funções e procedimentos
-- Vetores e matrizes
-- Strings
 - Resolução de problemas
 - Exercícios e desafios de programação
   
