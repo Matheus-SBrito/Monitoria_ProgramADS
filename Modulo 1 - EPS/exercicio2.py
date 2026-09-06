@@ -56,3 +56,46 @@ exibidas ao operador da fábrica?
 Desenvolva a análise **EPS** conceitual do problema e, 
 em seguida, escreva a solução correspondente em **Python**.
 """
+
+"""
+Contexto:
+
+Fabrica de suco que tem uma quantidades x de litros
+e quer sabre quantas garrafas de 350ml serão utilizadas.
+
+# EPS
+
+- Entradas:
+    Litro de Uva
+
+- Processamento:
+
+    Converter - Litros -> Mili Litros
+    Identificar quantas garrafas vão ficar cheias
+        mili_litros_uva / capicidade_garrafa
+
+    Identifacar quantas garrafas não ficarão completamente cheias
+
+- Saida
+
+    Garrafas cheias
+    Garrafas não totalmente cheias
+
+
+"""
+
+# Entrada
+suca_uva_produzido_em_litros = float(input("Total produzido de suco de uva: "))
+
+# Processamento
+conversao_uva = suca_uva_produzido_em_litros * 1000
+garrafas_cheias = conversao_uva // 350
+
+if (conversao_uva % 350 != 0):
+    garrafas_nao_cheias = 350  // (conversao_uva % 350)
+else:
+    garrafas_nao_cheias = 0
+
+print("Quantidade produzida de sucos de uva: ",conversao_uva)
+print("Quantidade de garrafas totalmente cheias: ", garrafas_cheias)
+print("Quantidade de garrafas não totalmente cheias: ", garrafas_nao_cheias)

@@ -30,3 +30,29 @@ A partir dessas informações, calcule e apresente ao usuário:
 2.  O custo financeiro total estimado para o abastecimento do veículo.
 
 """
+
+"""
+
+Contexto:
+
+Entrada, processamento e saida
+
+
+
+"""
+
+##
+# int - Inteiro
+# float - Ponto flutuante/ numero real
+# str - Cadeia de caracteres/ texto
+
+
+distancia = float(input("Digite a distância total da rota (em km): "))
+consumo_medio = float(input("Digite o consumo médio do veículo (em km/L): "))
+preco_combustivel = float(input("Digite o preço atual do litro de combustível (em R$): "))
+
+litros_consumidos = distancia / consumo_medio
+custo_total = litros_consumidos * preco_combustivel
+
+print ("Litro consumidos: ", litros_consumidos)
+print ("custo total estimado: R$", custo_total)
