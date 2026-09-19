@@ -17,3 +17,17 @@ Exemplos práticos:
 Em resumo: um ano é bissexto se for divisível por 4, exceto os séculos,
 que só são bissextos se forem divisíveis por 400.
 """
+
+ano = int(input("Digite um ano qualquer: "))
+
+# Verificando se o ano termina em '00'
+if (ano % 100 == 0): # Exceção a regra
+    if (ano % 400 == 0):
+        print("O Ano é bissexto")
+    else: print("O ano não é bissexto")
+
+# Verificando se o número é divisivel por 4
+else:
+    if (ano % 4 == 0):
+        print("O ano é bissexto")
+    else: print("O ano não é bissexto")
